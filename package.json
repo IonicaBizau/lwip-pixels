@@ -26,5 +26,8 @@
   "homepage": "https://github.com/IonicaBizau/lwip-pixels#readme",
   "devDependencies": {
     "lwip": "0.0.8"
+  },
+  "dependencies": {
+    "pixel-class": "^1.0.0"
   }
 }
