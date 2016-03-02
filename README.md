@@ -17,18 +17,17 @@ const lwipPixels = require("lwip-pixels")
 
 lwip.open(`${__dirname}/octocat.png`, (err, img) => {
     console.log(lwipPixels(img));
-    // [ [ { r: 0, g: 0, b: 0, a: 0 },
+    // [ [ PixelClass { r: 0, g: 0, b: 0, a: 0 },
+    //     PixelClass { r: 0, g: 0, b: 0, a: 0 },
+    //     PixelClass { r: 0, g: 0, b: 0, a: 0 },
     //     ...
-    //     { r: 0, g: 0, b: 0, a: 0 },
-    //     { r: 0, g: 0, b: 0, a: 0 },
-    //     { r: 0, g: 0, b: 0, a: 0 } ],
-    //   ...
-    //   [ { r: 0, g: 0, b: 0, a: 0 },
-    //     { r: 0, g: 0, b: 0, a: 0 },
+    //     PixelClass { r: 0, g: 0, b: 0, a: 0 } ],
+    //   [ PixelClass { r: 0, g: 0, b: 0, a: 0 },
     //     ...
-    //     { r: 255, g: 255, b: 255, a: 0 },
+    //     PixelClass { r: 0, g: 0, b: 0, a: 0.14 },
     //     ...
-    //     { r: 0, g: 0, b: 0, a: 0 } ] ]
+    //     PixelClass { r: 0, g: 0, b: 0, a: 0 } ],
+    //   ... ]
 });
 ```
 
@@ -41,13 +40,15 @@ Builts a pixel matrix from the input `lwip` object.
 - **lwip** `image`: The `lwip` object.
 
 #### Return
-- **Array** An array of arrays of `lwip` pixels.
+- **Array** An array of arrays of [`Pixel`](https://github.com/IonicaBizau/pixel-class) instances.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
 ## Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
+
+ - [`imgpx`](https://github.com/IonicaBizau/imgpx#readme)
 
 ## License
 
