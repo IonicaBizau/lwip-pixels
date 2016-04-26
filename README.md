@@ -1,14 +1,18 @@
+
 # lwip-pixels [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/lwip-pixels.svg)](https://www.npmjs.com/package/lwip-pixels) [![Downloads](https://img.shields.io/npm/dt/lwip-pixels.svg)](https://www.npmjs.com/package/lwip-pixels) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Get a matrix of pixels from a lwip image object.
 
-## Installation
+## :cloud: Installation
 
 ```sh
 $ npm i --save lwip-pixels
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
 const lwipPixels = require("lwip-pixels")
@@ -31,7 +35,8 @@ lwip.open(`${__dirname}/octocat.png`, (err, img) => {
 });
 ```
 
-## Documentation
+## :memo: Documentation
+
 
 ### `getPixels(image)`
 Builts a pixel matrix from the input `lwip` object.
@@ -42,15 +47,18 @@ Builts a pixel matrix from the input `lwip` object.
 #### Return
 - **Array** An array of arrays of [`Pixel`](https://github.com/IonicaBizau/pixel-class) instances.
 
-## How to contribute
+
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
- - [`imgpx`](https://github.com/IonicaBizau/imgpx#readme)
 
-## License
+ - [`imgpx`](https://github.com/IonicaBizau/imgpx#readme)—Get a matrix of pixels of a given image.
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
