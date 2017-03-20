@@ -1,6 +1,6 @@
 {
   "name": "lwip-pixels",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Get a matrix of pixels from a lwip image object.",
   "main": "lib/index.js",
   "directories": {
@@ -18,7 +18,7 @@
     "pixels",
     "image"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/lwip-pixels/issues"
@@ -34,12 +34,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
